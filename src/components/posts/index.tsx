@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { PostCard } from "../";
 
 import { useAppSelector, useAppDispatch } from "../../redux/index";
 import { getPostsAction } from "../../redux/modules/posts/actions";
@@ -15,12 +16,10 @@ const Posts: React.FC = () => {
 
   return (
     <div className={styles.list}>
-      Posts
       <div className={styles.value}>
         {posts.map((post, index) => (
           <div key={index}>
-            <img src={post.data.thumbnail} alt="" />
-            <p>{post.data.title}</p>
+            <PostCard title={post.title} thumbnail={post.thumbnail} />
           </div>
         ))}
       </div>

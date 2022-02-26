@@ -6,5 +6,5 @@ export const getPosts = async (): Promise<Post[]> => {
     "https://www.reddit.com/r/todayilearned.json"
   );
   const posts = response.data.data.children;
-  return posts;
+  return posts.map((post: { data: Post }) => post.data);
 };

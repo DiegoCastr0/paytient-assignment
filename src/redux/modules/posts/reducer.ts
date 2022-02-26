@@ -30,7 +30,6 @@ const reducer: Reducer<PostsState, AnyAction> = (
         isLoading: true,
       };
     case GET_POSTS_FULFILLED:
-      console.log(action.payload)
       return {
         ...state,
         isLoading: false,

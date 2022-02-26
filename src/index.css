@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-primary: ;
+  --color-white: #FFFFFF;
+  --color-light-gray: #F5F6F8;
+  --color-gray-border: #E5E7EB;
 }
 
 code {

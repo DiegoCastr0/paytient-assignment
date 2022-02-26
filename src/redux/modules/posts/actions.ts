@@ -1,4 +1,4 @@
-import { createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk } from "@reduxjs/toolkit";
 import { Post } from "../../../types";
 import { getPosts } from "./api";
 import {
