@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import { Posts } from "./components";
+import { Posts, Layout } from "./components";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <Layout>
       <Posts />
-    </div>
+    </Layout>
   );
 };
 

@@ -1,0 +1,18 @@
+.header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 5.125rem;
+  padding: 0 2rem;
+  border-bottom: 1px solid var(--color-gray-border);
+  background-color: var(--color-white);
+}
+
+.header h1 {
+  margin-left: 1rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
