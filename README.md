@@ -3,15 +3,15 @@
 This project consists of implementing a [Figma design](https://www.figma.com/file/ZwwVBsm1IJsfFDzQZnuavc/Paytient-Homework-Assignment-Today-I-Learned-Reddit?node-id=0%3A1), which is a post list of the Today I Learned Reddit Community, as a solution to the frontend assignment given by the Paytient team.
 
 ## Contents
-========
+
 - [Description](#description)
-- [Technologies](#technoloy-stack)
+- [Technologies](#technology-stack)
 - [Install](#install)
 - [Available Scripts](#available-scripts)
 
 ## Description
 
-This application use the [TypeScript + Redux Toolkit](https://github.com/reduxjs/cra-template-redux-typescript) template
+This app use the [TypeScript + Redux Toolkit](https://github.com/reduxjs/cra-template-redux-typescript) template
 
 ## Technology stack
 - ReactJS
