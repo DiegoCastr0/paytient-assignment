@@ -1,0 +1,44 @@
+.menuButton {
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: auto;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  z-index: 15;
+  transition: all 0.3s linear;
+  background: transparent;
+}
+
+.menuButton > div {
+  width: 1.5rem;
+  height: 0.25rem;
+  background: var(--color-black);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: flex;
+  }
+
+  .mobileMenuOpen > div:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .mobileMenuOpen > div:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  .mobileMenuOpen > div:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}

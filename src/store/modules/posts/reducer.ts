@@ -4,7 +4,7 @@ import {
   GET_POSTS_REJECTED,
 } from "./types";
 import { AnyAction, Reducer } from "redux";
-import { Post } from "../../../types";
+import { Post } from "types";
 
 export interface PostsState {
   isLoading: boolean;

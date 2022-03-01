@@ -1,10 +1,12 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import postsReducer from './modules/posts/reducer';
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import postsReducer from "./modules/posts/reducer";
+import uiReducer from "./modules/ui/reducer";
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({
   reducer: {
     posts: postsReducer,
+    ui: uiReducer,
   },
 });
 
@@ -19,4 +21,3 @@ export type AppThunk<ReturnType = void> = ThunkAction<
 // Use throughout your app instead of plain `useDispatch` and `useSelector`
 export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
-

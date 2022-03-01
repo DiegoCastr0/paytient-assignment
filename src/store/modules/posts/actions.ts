@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { Post } from "../../../types";
+import { Post } from "types";
 import { getPosts } from "./api";
 import {
   GET_POSTS_FETCHING,
@@ -22,7 +22,7 @@ const getPostsRejected = () => ({
 
 export const getPostsAction = createAsyncThunk(
   "posts",
-  async (a, thunkAPI) => {
+  async (_, thunkAPI) => {
     try {
       thunkAPI.dispatch(getPostsFetching());
       const response = await getPosts();

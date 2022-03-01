@@ -1,4 +1,4 @@
-import { Post } from "../../../types";
+import { Post } from "types";
 import Axios from "axios";
 
 export const getPosts = async (): Promise<Post[]> => {
