@@ -19,7 +19,8 @@ const Posts: React.FC = () => {
 
   useEffect(() => {
     dispatch(getPostsAction());
-  }, []);
+    // According to react-redux docs is safe to add dispatch to the dependency array
+  }, [dispatch]);
 
   if (isError) {
     return <div>Something went wrong. Please, try again later</div>;
