@@ -2,6 +2,8 @@
 
 This project consists of implementing a [Figma design](https://www.figma.com/file/ZwwVBsm1IJsfFDzQZnuavc/Paytient-Homework-Assignment-Today-I-Learned-Reddit?node-id=0%3A1), which is a post list of the Today I Learned Reddit Community, as a solution to the frontend assignment given by the Paytient team.
 
+Try it on https://paytient-assignment.herokuapp.com/
+
 ## Contents
 
 - [Description](#description)
